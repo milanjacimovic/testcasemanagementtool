@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
-    <div className="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-center">
+    <div className="bg-gray-900 text-white min-h-screen flex flex-col items-center justify-between">
       {/* Hero Section */}
-      <section className="text-center p-12 max-w-3xl mx-auto">
-        <h1 className="text-4xl font-extrabold mb-4">
+      <section className="text-center p-6 sm:p-12 max-w-3xl mx-auto">
+        <h1 className="text-3xl sm:text-4xl font-extrabold mb-4">
           Welcome to TestHive
         </h1>
-        <p className="text-lg mb-8">
+        <p className="text-lg sm:text-xl mb-8">
           A powerful tool to manage your software testing lifecycle. Create, organize, and track test cases and projects with ease.
         </p>
-        <div className="flex justify-center gap-6">
+        <div className="flex flex-col sm:flex-row justify-center gap-6">
           <Link
             to="/projects"
             className="bg-blue-600 text-white py-3 px-6 rounded-full text-xl font-semibold hover:bg-blue-700 transition duration-200"
@@ -32,7 +32,7 @@ export default function Home() {
       <section className="w-full py-16 bg-gray-800 text-white">
         <div className="max-w-6xl mx-auto text-center">
           <h2 className="text-3xl font-semibold mb-12">Key Features</h2>
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 px-4">
             <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
               <h3 className="text-xl font-semibold mb-4">Manage Projects</h3>
               <p>Organize your projects efficiently and keep track of the progress with ease.</p>
