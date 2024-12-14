@@ -63,7 +63,7 @@ export default function App() {
   );
   return (
     <div className='dark:bg-gray-900 min-h-screen'>
-      <BrowserRouter>
+      <BrowserRouter basename='/testcasemanagementtool'>
         <Navbar />
 
         <Routes>
