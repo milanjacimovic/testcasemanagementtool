@@ -41,7 +41,7 @@ export default function AddTestCase({ showAddNewTestCase, projects, testCase, se
   }
 
   return (
-   <form className="flex flex-col bg-white dark:bg-gray-900 p-6 border rounded-lg shadow-sm hover:shadow-lg hover:border-blue-500 transition duration-300 dark:border-gray-700 rounded-lg shadow-md" onSubmit={handleSubmit}>
+   <form className="flex flex-col bg-white dark:bg-gray-900 p-6 border hover:shadow-lg hover:border-blue-500 transition duration-300 dark:border-gray-700 rounded-lg shadow-md" onSubmit={handleSubmit}>
   <div className="flex flex-row justify-between m-3">
     <div className="selectProject flex flex-col">
       <label className="dark:text-white">Project</label>
