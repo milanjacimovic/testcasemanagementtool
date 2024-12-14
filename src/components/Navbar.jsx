@@ -3,9 +3,9 @@ import DarkModeToggle from "./DarkModeToggle";
 
 export default function Navbar({ children }) {
     return (
-        <div className="Navbar p-5 bg-primary-color text-white flex justify-between items-center w-full">
+        <div className="Navbar p-5 sm:p-1  bg-primary-color text-white flex justify-between items-center w-full">
 
-            <div className="NavbarCenter flex basis-5/7 gap-5">
+            <div className="NavbarCenter flex basis-5/7 gap-5 sm:gap-1">
                 <Link to="/">TestHive</Link>
                 <Link to="/projects">Projects</Link>
                 <Link to="/testcases">Test Cases</Link>
