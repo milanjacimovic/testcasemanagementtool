@@ -51,7 +51,7 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="w-full py-8 bg-gray-800 text-center text-white">
-        <p>© 2024 TestCase Manager. All rights reserved.</p>
+        <p>© 2024 TestHive. All rights reserved.</p>
       </footer>
     </div>
   );
