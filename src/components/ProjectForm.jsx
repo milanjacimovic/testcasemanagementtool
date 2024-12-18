@@ -1,8 +1,8 @@
 import EditIcon from '@mui/icons-material/Edit';
 import DeleteIcon from '@mui/icons-material/Delete';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
-export default function ProjectForm({ filteredTestCases, setFilteredTestCases, showProjects, setShowProjects, name, id, selectedProject, setSelectedProject, handleDelete, handleUpdate, testCases, setTestCases }) {
+export default function ProjectForm({ setFilteredTestCases, setShowProjects, name, id, setSelectedProject, handleDelete, handleUpdate, testCases }) {
 
   const [isEditing, setIsEditing] = useState(false);
   const [newName, setNewName] = useState(name);

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {v4 as uuid} from "uuid";
 
-export default function AddNewProjectForm({projects, setProjects, showAddNewProjectForm: toggleAddNewProjectForm}) {
+export default function AddNewProjectForm({setProjects, showAddNewProjectForm: toggleAddNewProjectForm}) {
     const [inputValue, setInputValue] = useState("");
 
     function handleInputChange(e) {
@@ -20,7 +20,7 @@ export default function AddNewProjectForm({projects, setProjects, showAddNewProj
 
     return (
         <div className="border-4 border-primary-color p-8">
-            <h1 className="flex dark:text-white justify-center">Enter project's name</h1>
+            <h1 className="flex dark:text-white justify-center">Enter project&apos;s name</h1>
             <div className="Input">
                 <input type="text" className="shadow-sm border-gray-300 rounded-lg m-2 focus:ring-2 focus:ring-indigo-200 focus:border-indigo-400" onChange={handleInputChange}/>
             </div>
